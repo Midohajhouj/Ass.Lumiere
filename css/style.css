@@ -62,11 +62,9 @@ body {
 .header_section {
   padding-top: 10px;
   font-family: 'Poppins', sans-serif;
-
 }
 
 nav.navbar.navbar-expand-lg {
-
   padding: 10px 0;
 }
 
@@ -75,7 +73,6 @@ nav.navbar.navbar-expand-lg {
   color: #f7f6f7;
   text-align: center;
 }
-
 
 a,
 a:hover,
@@ -97,8 +94,6 @@ a:focus {
 .top_container {
   position: relative;
 }
-
-
 
 .top_container::before {
   content: "";
@@ -127,17 +122,14 @@ a:focus {
   background-color: #fdd31d;
 }
 
-
 .sub_page .top_container::after {
   display: none;
 }
-
 
 .navbar-brand img {
   width: 25px;
   margin-right: 7px;
 }
-
 
 .custom_nav-container .nav_search-btn {
   background-image: url(../images/search-icon.png);
@@ -209,12 +201,10 @@ a:focus {
   width: 70%;
 }
 
-
 .hero_detail-box p {
   margin-top: 20px;
   margin-bottom: 35px;
 }
-
 
 /* end hero section */
 
@@ -242,7 +232,6 @@ a:focus {
   width: 100%;
 }
 
-
 /* end common style */
 
 /* about section */
@@ -258,7 +247,6 @@ a:focus {
 /* end about section */
 
 /* admission section */
-
 
 .admission_section a {
   background-color: #fdd31d;
@@ -282,12 +270,10 @@ a:focus {
 
 /* determine section */
 
-
 .determine_section a {
   background-color: #fdd31d;
   color: #fefeff;
 }
-
 
 /* end determine section */
 
@@ -301,7 +287,6 @@ a:focus {
 .client_section h2 {
   text-align: center;
 }
-
 
 .client_section h5 {
   font-size: 24px;
@@ -344,13 +329,11 @@ a:focus {
   animation-delay: .1s;
 }
 
-
 @keyframes beforeanimate {
   0% {
     top: 43%;
     transform: rotate(142deg);
     left: 31%;
-
   }
 
   100% {
@@ -414,8 +397,6 @@ a:focus {
   margin: 15px 0;
 }
 
-
-
 .contact_form-container button {
   border: none;
   background-color: #000000;
@@ -428,10 +409,8 @@ a:focus {
 }
 
 .contact_img-box {
-
   display: flex;
   align-items: center;
-
 }
 
 .contact_img-box img {
@@ -446,9 +425,7 @@ a:focus {
   margin-bottom: 35px;
 }
 
-
 /* end contact section */
-
 
 /* info section */
 .info_section {
@@ -489,8 +466,6 @@ a:focus {
   margin-bottom: 12px;
   font-size: 22px;
 }
-
-
 
 .info_section .form_container input {
   width: 225px;
@@ -540,7 +515,6 @@ a:focus {
   background-color: #8d7834f3;
   padding: 20px 15px;
   font-family: 'Poppins', sans-serif;
-
 }
 
 .footer_section p {
@@ -553,6 +527,62 @@ a:focus {
   color: #fdfdfe;
 }
 
+/* end footer section */
 
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 150px;
+  }
 
-/* end footer section*/
+  .hero_detail-box {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero_img-container {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 20px;
+  }
+
+  .hero_detail-box h1 {
+    font-size: 36px;
+    width: 100%;
+  }
+
+  .common_style>section {
+    padding: 30px 0;
+  }
+
+  .common_style h3 {
+    font-size: 24px;
+  }
+
+  .common_style p {
+    font-size: 16px;
+    margin: 20px 0 30px 0;
+  }
+
+  .contact_section {
+    padding: 50px 20px;
+  }
+
+  .contact_section h2 {
+    font-size: 22px;
+  }
+
+  .info_section .form_container input {
+    width: 100%;
+  }
+
+  .info_section .social-box {
+    width: 100%;
+  }
+
+  .footer_section {
+    padding: 15px 10px;
+  }
+}
