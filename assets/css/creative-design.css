@@ -60,7 +60,99 @@ html {
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
+/* Adjust font sizes for smaller screens */
+@media (max-width: 768px) {
+  h1, .h1 {
+    font-size: 2rem;
+  }
+  h2, .h2 {
+    font-size: 1.75rem;
+  }
+  h3, .h3 {
+    font-size: 1.5rem;
+  }
+  h4, .h4 {
+    font-size: 1.25rem;
+  }
+  h5, .h5 {
+    font-size: 1rem;
+  }
+  h6, .h6 {
+    font-size: 0.875rem;
+  }
+}
 
+/* Adjust padding and margins for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+  .form-control {
+    font-size: 0.875rem;
+  }
+}
+
+/* Stack elements vertically on smaller screens */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+  .col {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Adjust navbar for mobile */
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+  }
+  .navbar-toggler {
+    display: block;
+  }
+  .navbar-collapse {
+    display: none;
+  }
+  .navbar-collapse.show {
+    display: block;
+  }
+}
+
+/* Adjust card layout for mobile */
+@media (max-width: 768px) {
+  .card {
+    margin-bottom: 1rem;
+  }
+  .card-body {
+    padding: 1rem;
+  }
+}
+
+/* Adjust table layout for mobile */
+@media (max-width: 768px) {
+  .table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Adjust modal for mobile */
+@media (max-width: 768px) {
+  .modal-dialog {
+    margin: 1rem;
+  }
+  .modal-content {
+    padding: 1rem;
+  }
+}
 body {
   margin: 0;
   font-family: "Ubuntu", sans-serif;
